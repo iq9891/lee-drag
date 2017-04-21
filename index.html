@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>颜色</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button id="adhoc-background-color">显示显示显示显示显示显示</button>
+    <div id="lee-colorpick" class="lee-colorpick">
+      <div id="lee-colorpick_color" class="lee-colorpick_color" style="background-color: rgb(212, 0, 255);">
+        <div id="lee-inner" class="lee-colpick_selector_inner"></div>
+      </div>
+      <div class="lee-colorpick_hue"></div>
+      <div class="lee-colorpick_handle">
+        <div class="lee-colorpick_show_color">
+          <div class="lee-colorpick_new_color" style="background:red;"></div>
+          <div class="lee-colorpick_current_color" style="background:blue;"></div>
+        </div>
+        <div class="lee-colpick_field">
+          <p class="lee-colpick_title">R</p>
+          <input type="tel" maxlength="3" size="3" class="lee-colpick_inp">
+        </div>
+        <div class="lee-colpick_field">
+          <p class="lee-colpick_title">G</p>
+          <input type="tel" maxlength="3" size="3" class="lee-colpick_inp">
+        </div>
+        <div class="lee-colpick_field">
+          <p class="lee-colpick_title">B</p>
+          <input type="tel" maxlength="3" size="3" class="lee-colpick_inp">
+        </div>
+        <div class="lee-colpick_field">
+          <p class="lee-colpick_title">#</p>
+          <input type="tel" maxlength="6" size="6" class="lee-colpick_inp">
+        </div>
+        <button class="lee-colpick_sub">OK</button>
+      </div>
+    </div>
+    <script>
+    $('#adhoc-background-color').colpick({
+      parent: $('body'),
+      // color: $.colpick.rgbToHex({r:this.aColorNow[0]-0,g:this.aColorNow[1]-0,b:this.aColorNow[2]-0}),
+      // onSubmit: function(hsb,hex,rgb,el){
+      //   $(el).colpickHide();
+      // }
+    });
+    </script>
+  </body>
+</html>

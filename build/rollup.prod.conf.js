@@ -6,7 +6,7 @@ import replace from 'rollup-plugin-replace';
 
 export default {
   entry: './src/drag.js',
-  dest: './dist/drag.js',
+  dest: './out/drag.js',
   format: 'iife',
   plugins: [
     resolve({

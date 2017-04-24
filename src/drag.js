@@ -1,6 +1,4 @@
 
-import './drag';
-
 const $ = window.$;
 
 function bindDom(self, parmas) {

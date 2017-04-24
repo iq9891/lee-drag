@@ -33,8 +33,16 @@ const _colpick = () => {
       //   console.log(111);
       // });
       $('#lee-inner').drag({
-        parent: '#lee-inner',
+        drag: '#lee-inner',
+        limit: true,
+        move: (moveEvent, x, y) => {
+          console.log(x, y);
+        },
       });
+      // 设置某个位置
+      // setTimeout(() => {
+      //   $.dragpos($('#lee-inner'), 0, 0);
+      // }, 2000);
     }, // end init
   };
 };
